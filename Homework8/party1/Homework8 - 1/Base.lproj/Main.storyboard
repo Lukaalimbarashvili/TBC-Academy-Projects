@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework8___1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FgI-r6-Ad1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYf-KS-RFg">
+                                <rect key="frame" x="0.0" y="44" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYo-GP-bkD">
+                                <rect key="frame" x="0.0" y="453" width="207" height="409"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTn-dP-rfJ">
+                                <rect key="frame" x="207" y="453" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzy-04-C6g">
+                                <rect key="frame" x="207" y="44" width="207" height="409"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tzy-04-C6g" firstAttribute="leading" secondItem="aYf-KS-RFg" secondAttribute="trailing" id="0oe-CZ-5zk"/>
+                            <constraint firstItem="aYf-KS-RFg" firstAttribute="width" secondItem="tzy-04-C6g" secondAttribute="width" id="4vU-en-ZvL"/>
+                            <constraint firstItem="oZE-K7-nwC" firstAttribute="bottom" secondItem="zYo-GP-bkD" secondAttribute="bottom" id="96v-lU-8MC"/>
+                            <constraint firstItem="xTn-dP-rfJ" firstAttribute="leading" secondItem="zYo-GP-bkD" secondAttribute="trailing" id="Dho-Pq-gAX"/>
+                            <constraint firstItem="zYo-GP-bkD" firstAttribute="height" secondItem="aYf-KS-RFg" secondAttribute="height" id="KHR-Mb-ZG9"/>
+                            <constraint firstItem="zYo-GP-bkD" firstAttribute="leading" secondItem="oZE-K7-nwC" secondAttribute="leading" id="MfY-5i-dv9"/>
+                            <constraint firstItem="aYf-KS-RFg" firstAttribute="top" secondItem="oZE-K7-nwC" secondAttribute="top" id="NfG-Ko-ptV"/>
+                            <constraint firstItem="zYo-GP-bkD" firstAttribute="width" secondItem="aYf-KS-RFg" secondAttribute="width" id="PFb-hr-UiX"/>
+                            <constraint firstItem="tzy-04-C6g" firstAttribute="top" secondItem="oZE-K7-nwC" secondAttribute="top" id="PdM-1X-jXM"/>
+                            <constraint firstItem="oZE-K7-nwC" firstAttribute="bottom" secondItem="xTn-dP-rfJ" secondAttribute="bottom" id="VEw-0X-9Tg"/>
+                            <constraint firstItem="zYo-GP-bkD" firstAttribute="top" secondItem="aYf-KS-RFg" secondAttribute="bottom" id="Wpe-fB-o3f"/>
+                            <constraint firstItem="oZE-K7-nwC" firstAttribute="trailing" secondItem="xTn-dP-rfJ" secondAttribute="trailing" id="X6P-d9-PWZ"/>
+                            <constraint firstItem="aYf-KS-RFg" firstAttribute="leading" secondItem="oZE-K7-nwC" secondAttribute="leading" id="Z9T-8K-2kE"/>
+                            <constraint firstItem="xTn-dP-rfJ" firstAttribute="top" secondItem="tzy-04-C6g" secondAttribute="bottom" id="adZ-5c-uFk"/>
+                            <constraint firstItem="oZE-K7-nwC" firstAttribute="trailing" secondItem="tzy-04-C6g" secondAttribute="trailing" id="cKl-MP-2zj"/>
+                            <constraint firstItem="zYo-GP-bkD" firstAttribute="top" secondItem="aYf-KS-RFg" secondAttribute="bottom" id="ezz-rK-cKZ"/>
+                            <constraint firstItem="tzy-04-C6g" firstAttribute="leading" secondItem="aYf-KS-RFg" secondAttribute="trailing" id="fuT-g9-sDK"/>
+                            <constraint firstItem="xTn-dP-rfJ" firstAttribute="height" secondItem="tzy-04-C6g" secondAttribute="height" id="mQ9-Jd-mMw"/>
+                            <constraint firstItem="xTn-dP-rfJ" firstAttribute="leading" secondItem="zYo-GP-bkD" secondAttribute="trailing" id="nfu-NJ-4vI"/>
+                            <constraint firstItem="xTn-dP-rfJ" firstAttribute="width" secondItem="tzy-04-C6g" secondAttribute="width" id="p4x-cW-slP"/>
+                            <constraint firstItem="aYf-KS-RFg" firstAttribute="height" secondItem="tzy-04-C6g" secondAttribute="height" id="vbc-P4-z89"/>
+                            <constraint firstItem="xTn-dP-rfJ" firstAttribute="top" secondItem="tzy-04-C6g" secondAttribute="bottom" id="zXM-VR-JjW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oZE-K7-nwC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
