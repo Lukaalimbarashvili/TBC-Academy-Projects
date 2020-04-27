@@ -48,6 +48,11 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK!", style: .cancel, handler: nil))
             self.present(alert, animated: true)
             
+        } else if phoneNumber.text!.count < 9 {
+            let alert = UIAlertController(title: "Failed", message: "Phone number is incorrect", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK!", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+            
         } else {
             self.nameText = name.text!
             self.surnameText = surname.text!
