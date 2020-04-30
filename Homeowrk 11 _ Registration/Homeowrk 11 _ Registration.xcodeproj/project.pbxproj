@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00017FF245A63CA002A550B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00017FE245A63CA002A550B /* CustomTableViewCell.swift */; };
 		A0271DA02459864800391453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0271D9F2459864800391453 /* AppDelegate.swift */; };
 		A0271DA22459864800391453 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0271DA12459864800391453 /* SceneDelegate.swift */; };
 		A0271DA42459864800391453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0271DA32459864800391453 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A00017FE245A63CA002A550B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		A0271D9C2459864800391453 /* Homeowrk 11 _ Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homeowrk 11 _ Registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0271D9F2459864800391453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0271DA12459864800391453 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				A0271DAD2459864800391453 /* Info.plist */,
 				A0271DB324598C3500391453 /* File.swift */,
 				A0271DB52459946D00391453 /* userInfoViewController.swift */,
+				A00017FE245A63CA002A550B /* CustomTableViewCell.swift */,
 			);
 			path = "Homeowrk 11 _ Registration";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00017FF245A63CA002A550B /* CustomTableViewCell.swift in Sources */,
 				A0271DB62459946D00391453 /* userInfoViewController.swift in Sources */,
 				A0271DA42459864800391453 /* ViewController.swift in Sources */,
 				A0271DB424598C3500391453 /* File.swift in Sources */,

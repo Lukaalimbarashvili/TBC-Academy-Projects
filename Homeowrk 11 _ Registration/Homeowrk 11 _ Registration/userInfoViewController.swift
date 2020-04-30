@@ -19,22 +19,27 @@ class userInfoViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel!.numberOfLines = 0;
+        let cell = tableView.dequeueReusableCell(withIdentifier: "info", for: indexPath) as! CustomTableViewCell
+        let info = finalUsers[indexPath.row]
 
-        for item in finalUsers {
-            cell.textLabel?.text = "Name : \(item.name)\nSurname : \(item.surname)\nEmail : \(item.email)\nGender : \(item.gender)\nChild/Adult : \(item.ageDetector)"
-
-        }
+        cell.nameLabel.text = "Name : \(info.name)"
+        cell.surnameLabel.text = "Surname : \(info.surname)"
+        cell.emailLabel.text = "Email : \(info.email)"
+        cell.genderLabel.text = "Gender : \(info.gender)"
+        cell.ageDetectorLabel.text = "Age : \(info.ageDetector)"
+    
         
         return cell
          
     }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
 
     }
+
+
     
 
 
