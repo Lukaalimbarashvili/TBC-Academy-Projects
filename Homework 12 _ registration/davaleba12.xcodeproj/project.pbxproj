@@ -59,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				0E4E71BE245AD04400DCE7F0 /* AppDelegate.swift */,
-				0E4E71C0245AD04400DCE7F0 /* ViewController.swift */,
 				0E4E71C2245AD04400DCE7F0 /* Main.storyboard */,
 				0E4E71C5245AD04600DCE7F0 /* Assets.xcassets */,
 				0E4E71C7245AD04600DCE7F0 /* LaunchScreen.storyboard */,
 				0E4E71CA245AD04600DCE7F0 /* Info.plist */,
-				0E4E71D0245AD40A00DCE7F0 /* cell.swift */,
+				0E4E71C0245AD04400DCE7F0 /* ViewController.swift */,
 				0E4E71D2245ADC1E00DCE7F0 /* AddStoryViewController.swift */,
+				0E4E71D0245AD40A00DCE7F0 /* cell.swift */,
 			);
 			path = davaleba12;
 			sourceTree = "<group>";

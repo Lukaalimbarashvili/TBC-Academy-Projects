@@ -70,7 +70,7 @@ extension ViewController: UITableViewDelegate{
             self.Article.remove(at: indexPath.row)
             tableView.reloadData()
         }
-        
+
         let edit = UIContextualAction(style: .normal, title: "Edit") {(action,view,handler) in
 
         }
