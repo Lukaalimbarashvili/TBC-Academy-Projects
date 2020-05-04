@@ -98,7 +98,7 @@
         <!--User Info View Controller-->
         <scene sceneID="xh6-F9-cwS">
             <objects>
-                <viewController id="kgg-Cn-00p" customClass="userInfoViewController" customModule="Homeowrk_11___Registration" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userInfo" id="kgg-Cn-00p" customClass="userInfoViewController" customModule="Homeowrk_11___Registration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="thT-Ya-GT7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
