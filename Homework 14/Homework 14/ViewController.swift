@@ -65,6 +65,8 @@ class ViewController: UIViewController {
     }()
     var slider: UISlider!
     
+    var tealViewTopConstraint: NSLayoutConstraint!
+    
   
 
     override func viewDidLoad() {
@@ -293,6 +295,7 @@ class ViewController: UIViewController {
         }
         
     }
+   
  
 
 
