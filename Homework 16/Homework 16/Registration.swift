@@ -36,7 +36,7 @@ class Registration: UIViewController {
         UDManager.saveUsername(value: username)
         UDManager.saveEmail(value: email)
         UDManager.savePassword(value: password)
-        UDManager.saveNote(value: "")
+        UDManager.saveNote(value: "Whats on your mind?")
         UDManager.saveBgcolor(value: "")
       
 
