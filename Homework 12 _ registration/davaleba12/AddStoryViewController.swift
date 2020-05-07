@@ -8,7 +8,7 @@
 
 import UIKit
 protocol AddArticle {
-    func getSomeDataFromThere(story:String)
+    func getSomeDataFromThere(story: String)
 }
 
 class AddStoryViewController: UIViewController {
@@ -23,7 +23,8 @@ class AddStoryViewController: UIViewController {
     }
     
     @IBAction func buttonActivated(_ sender: UIButton) {
-        delegate?.getSomeDataFromThere(story: storyTextField.text ?? "")
+        let x = storyTextField.text!
+        delegate?.getSomeDataFromThere(story: x)
         self.navigationController?.popViewController(animated: true)
   
     }
