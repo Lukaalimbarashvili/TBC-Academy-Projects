@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, fortableview {
+class ViewController: UIViewController {
   
     
     
@@ -23,17 +23,11 @@ class ViewController: UIViewController, fortableview {
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }
-    func fortableview() {
-          tableView.reloadData()
-      }
+
     
     @IBAction func addNote(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let addStoryPage = storyboard.instantiateViewController(withIdentifier: "add_note")
-        
-        if let realAddStoryPage = addStoryPage as? AddView {
-            realAddStoryPage.delegate = self
-        }
         self.navigationController?.pushViewController(addStoryPage, animated: true)
     }
     let customManager = MyFileManager.customManager

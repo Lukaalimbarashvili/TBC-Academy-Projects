@@ -8,16 +8,14 @@
 
 import UIKit
 
-protocol fortableview {
-    func fortableview()
-}
+
 class AddView: UIViewController {
 
 
     @IBOutlet weak var addText: UITextView!
     @IBOutlet weak var mainLabel: UILabel!
     
-    var delegate: fortableview?
+
     
     var tempText = ""
     var tempMainLabel = "Write Notes Here :"
@@ -34,7 +32,6 @@ class AddView: UIViewController {
 
         guard let newNote =  addText.text,  addText.hasText else {return alert(title: "Warning", message: "please fill in Note Field")}
 
-        delegate?.fortableview()
 
         let newNoteIndex = UDManager.getNumber()
         let z = Int(newNoteIndex)! + 1
