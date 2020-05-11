@@ -180,7 +180,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write Notes Here:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R71-Va-TGO">
-                                <rect key="frame" x="134" y="195" width="146" height="35"/>
+                                <rect key="frame" x="134" y="174" width="146" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ESa-5u-FuY"/>
                                 </constraints>
@@ -189,7 +189,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z73-Jk-UGZ">
-                                <rect key="frame" x="50" y="291" width="314" height="150"/>
+                                <rect key="frame" x="50" y="270" width="314" height="150"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="mp8-Dg-2M6"/>
@@ -199,7 +199,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3S-OJ-W6s">
-                                <rect key="frame" x="147" y="489" width="120" height="40"/>
+                                <rect key="frame" x="147" y="468" width="120" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8cX-DV-t0s"/>
@@ -219,7 +219,7 @@
                             <constraint firstItem="vW4-3n-7Ds" firstAttribute="trailing" secondItem="z73-Jk-UGZ" secondAttribute="trailing" constant="50" id="Sm0-AH-OTG"/>
                             <constraint firstItem="vW4-3n-7Ds" firstAttribute="trailing" secondItem="R71-Va-TGO" secondAttribute="trailing" constant="134" id="Sz6-CQ-bra"/>
                             <constraint firstItem="R3S-OJ-W6s" firstAttribute="top" secondItem="z73-Jk-UGZ" secondAttribute="bottom" constant="48" id="Tqs-kZ-16c"/>
-                            <constraint firstItem="R71-Va-TGO" firstAttribute="top" secondItem="vW4-3n-7Ds" secondAttribute="top" constant="151" id="fK7-Iv-S27"/>
+                            <constraint firstItem="R71-Va-TGO" firstAttribute="top" secondItem="vW4-3n-7Ds" secondAttribute="top" constant="130" id="fK7-Iv-S27"/>
                             <constraint firstItem="z73-Jk-UGZ" firstAttribute="leading" secondItem="vW4-3n-7Ds" secondAttribute="leading" constant="50" id="jPN-UX-BF6"/>
                             <constraint firstItem="z73-Jk-UGZ" firstAttribute="top" secondItem="R71-Va-TGO" secondAttribute="bottom" constant="61" id="lZZ-cE-f8q"/>
                             <constraint firstItem="R71-Va-TGO" firstAttribute="leading" secondItem="vW4-3n-7Ds" secondAttribute="leading" constant="134" id="n6N-fv-gPW"/>

@@ -70,10 +70,9 @@ extension ChatView: UITableViewDataSource {
         // MARK: - ESE MINDODA INFOS GADATANA MEORE GVERDZE MARA RUNTIMES DROS ERORS MIGDEVS DA  MIWERS MEUBNEBA NIL VOPOVE 66 XAZZEO
           
           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-          let addStoryPage = storyboard.instantiateViewController(withIdentifier: "CHAT_DETAILS")
-      
-//          addStoryPage.detailedName.text = chatArray[indexPath.row].name
-//          addStoryPage.detailedMessage.text = chatArray[indexPath.row].message
+          let addStoryPage = storyboard.instantiateViewController(withIdentifier: "CHAT_DETAILS") as! chatDetailsView
+          addStoryPage.x = chatArray[indexPath.row].name
+          addStoryPage.y = chatArray[indexPath.row].message
 
           self.navigationController?.pushViewController(addStoryPage, animated: true)
         

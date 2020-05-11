@@ -19,10 +19,13 @@ class chatDetailsView: UIViewController {
     @IBOutlet weak var detailedMessage: UILabel!
     
 
-
+    var x = ""
+    var y = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the vie
+        detailedName.text = x
+        detailedMessage.text = y
 
     }
     

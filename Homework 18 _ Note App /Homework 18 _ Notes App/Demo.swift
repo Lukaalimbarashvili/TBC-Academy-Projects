@@ -21,7 +21,7 @@ class MyFileManager {
 
     
     var  mainPath: URL {
-        return try! fm.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+        return try! fm.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     }
     
     // MARK: - CREATE FILE
@@ -43,7 +43,9 @@ class MyFileManager {
     
     //MARK: - SEE AND READ CONTENT INSIDE FOLDER
     func contentsOf(url: URL) -> [URL] {
+           print(url)
         return try! fm.contentsOfDirectory(at: url, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
+     
     }
     
     func readText(url: URL) -> String {
