@@ -61,10 +61,10 @@ class Authorization_ViewController: UIViewController {
         do {
             let users = try context.fetch(request)
             for item in users {
-                tempUsername.append(item.name!)
+                tempUsername.append(item.name ?? "")
             }
             for item in users {
-                tempPassword.append(item.password!)
+                tempPassword.append(item.password ?? "")
             }
         } catch {}
     }

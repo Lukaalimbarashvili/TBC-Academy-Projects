@@ -2,13 +2,15 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Notes" representedClassName="Notes" syncable="YES" codeGenerationType="class">
         <attribute name="note" optional="YES" attributeType="String"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="userNotes" inverseEntity="User"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
+        <relationship name="userNotes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Notes" inverseName="newRelationship" inverseEntity="Notes"/>
     </entity>
     <elements>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="Notes" positionX="-54" positionY="9" width="128" height="58"/>
+        <element name="Notes" positionX="-54" positionY="9" width="128" height="73"/>
+        <element name="User" positionX="-291.703125" positionY="-3.17578125" width="128" height="88"/>
     </elements>
 </model>

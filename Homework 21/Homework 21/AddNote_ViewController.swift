@@ -43,8 +43,11 @@ class AddNote_ViewController: UIViewController {
             let context = AppDelegate.coreDataContainer.viewContext
             
             let notes = Notes(context: context)
-            
+            let tempUser = User(context: context)
+        
+        
             notes.note = noteText.text!
+            tempUser.userNotes = notes
           
             do {
                 try context.save()
