@@ -82,6 +82,7 @@ extension PodcastsTableView: UITableViewDataSource {
         
         let request: NSFetchRequest<Podcast> = Podcast.fetchRequest()
         
+       
         if isFiltering {
             
 //            do{
@@ -103,6 +104,7 @@ extension PodcastsTableView: UITableViewDataSource {
             
         } else {
             do{
+                
                 let result = try context.fetch(request)
                 
                 let pod = result as? [NSManagedObject]
