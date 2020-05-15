@@ -25,6 +25,7 @@ class Home: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -62,12 +63,11 @@ class Home: UIViewController {
     func fetchPost() {
            let context = AppDelegate.coreDataContainer.viewContext
            
-           let request: NSFetchRequest<Post> =
-               Post.fetchRequest()
+           let request: NSFetchRequest<Post> = Post.fetchRequest()
            
            do {
                let UserInfo = try context.fetch(request)
-               allPosts.append(contentsOf: UserInfo)
+            allPosts = allUsers[currentUserIndex].userPost?.allObjects as! [Post]
            } catch {}
        }
        

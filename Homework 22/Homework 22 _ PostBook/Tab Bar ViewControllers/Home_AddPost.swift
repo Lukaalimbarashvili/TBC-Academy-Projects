@@ -47,6 +47,9 @@ extension Home_AddPost {
       post.user = userArray[currentUserIndex]
       post.post = newPost.text!
       post.date = Date()
+        print("___________")
+        print(userArray[currentUserIndex])
+        print("___________")
       do {
         try context.save()
 //        print(post.post)

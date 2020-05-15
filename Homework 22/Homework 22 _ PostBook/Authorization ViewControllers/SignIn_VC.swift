@@ -19,6 +19,7 @@ class SignIn_VC: UIViewController, UITextFieldDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        alert(title: "read this", message: "ერთი პრობლემაა, პირველი არა მაგრამ მეორე  უზერს რომ ვარეგისტრირებ მერე უნდა გამორთო და თავიდან ჩართო რომ ავტორიზაცია წარმატებით გაიაროს, ეგრევე ავტორიზაციის დროს იქრაშება, არვიცი რატო შვება ესე რაღაც ლოგიკაში მაქ ალბათ შეცდომა")
         self.title = "PostBook"
         NotificationCenter.default.addObserver(self, selector: #selector(SignIn_VC.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(SignIn_VC.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
