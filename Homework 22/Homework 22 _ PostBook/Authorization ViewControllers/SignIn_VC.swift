@@ -34,6 +34,7 @@ class SignIn_VC: UIViewController, UITextFieldDelegate  {
             
             if username.text == usernameArray[x] && password.text == passwordArray[x] {
                 UDManager.saveNumber(value: "\(x)")
+                print("real \(x)")
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let  newsVC = storyboard.instantiateViewController(identifier: "USER_POSTS")
                 showAlert = false

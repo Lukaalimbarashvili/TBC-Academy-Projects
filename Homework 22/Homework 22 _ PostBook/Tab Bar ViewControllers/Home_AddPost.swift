@@ -9,21 +9,28 @@
 import UIKit
 import CoreData
 
+//protocol postPageProtocol {
+//    func updatePosts()
+//}
+
 class Home_AddPost: UIViewController {
     
     @IBOutlet weak var addPostLabel: UILabel!
     @IBOutlet weak var newPost: UITextView!
     
     var userArray = [User]()
+//    var postProcotol: postPageProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchUser()
     }
-    
+    let currentUserIndex = Int(UDManager.getNumber())!
     
     @IBAction func saveNewPost(_ sender: Any) {
-        let currentUserIndex = Int(UDManager.getNumber())!
+        
         createPost(user: userArray[currentUserIndex])
+//        print(userArray[currentUserIndex].userPost?.count)
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -32,18 +39,18 @@ class Home_AddPost: UIViewController {
 
 extension Home_AddPost {
     
-    
-    //MARK: - აქ ვერ დავამატე რომ ბევრი პოსტები ქონდეს მარტო ერთს უთითებს
     func createPost(user: User) {
       let context = AppDelegate.coreDataContainer.viewContext
 
       let notEntityDescription = NSEntityDescription.entity(forEntityName: "Post", in: context)
       let post = Post(entity: notEntityDescription!, insertInto: context)
+      post.user = userArray[currentUserIndex]
       post.post = newPost.text!
       post.date = Date()
-      user.userPost = post
       do {
         try context.save()
+//        print(post.post)
+//        postProcotol?.updatePosts()
       } catch {}
     }
     

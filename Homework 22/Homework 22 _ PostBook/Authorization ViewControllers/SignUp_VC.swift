@@ -98,6 +98,7 @@ extension SignUp_VC {
         
         do {
             try context.save()
+            print(user.name)
         } catch {}
     }
 }

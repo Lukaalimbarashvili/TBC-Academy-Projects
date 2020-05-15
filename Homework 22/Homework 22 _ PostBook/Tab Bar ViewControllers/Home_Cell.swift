@@ -18,10 +18,16 @@ class Home_Cell: UITableViewCell {
     var tempUser: User! {
         didSet {
             userName_Surname.text = "\(tempUser.name ?? "") \(tempUser.surname ?? "")"
-            userPost.text = tempUser.userPost?.post
+//            userPost.text = tempUser.userPost?.post
         
             userImage.image = UIImage(data: tempUser.image!)
-            postDate.text = tempUser.userPost?.date?.formattedDate
+//            postDate.text = tempUser.userPost?.date?.formattedDate
+        }
+    }
+    var tempPost: Post! {
+        didSet {
+            userPost.text = tempPost.post
+            postDate.text = tempPost.date?.formattedDate
         }
     }
     
