@@ -32,6 +32,8 @@ class Home_AddPost: UIViewController {
 
 extension Home_AddPost {
     
+    
+    //MARK: - აქ ვერ დავამატე რომ ბევრი პოსტები ქონდეს მარტო ერთს უთითებს
     func createPost(user: User) {
       let context = AppDelegate.coreDataContainer.viewContext
 

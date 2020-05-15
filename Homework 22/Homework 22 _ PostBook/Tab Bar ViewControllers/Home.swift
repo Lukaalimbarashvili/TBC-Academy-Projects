@@ -55,6 +55,7 @@ extension Home: UITableViewDelegate {
 }
 extension Home: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //MARK: - აქ უსერზე ბევრი პოსტის გაკეთება რომ მცოდნოდა დავწერდი user.userpost.count
         return allPosts.count
     }
     
