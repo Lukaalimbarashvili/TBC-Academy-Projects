@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SignUp_VC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -18,6 +19,7 @@ class SignUp_VC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     @IBOutlet weak var password: UITextField!
     
     let imagePicker = UIImagePickerController()
+    var user = [User]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,7 @@ class SignUp_VC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     
     @IBAction func SignUp(_ sender: Any) {
         signUpUser()
+        fetchUser()
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -98,7 +101,24 @@ extension SignUp_VC {
         
         do {
             try context.save()
-            print(user.name)
+        } catch {}
+    }
+    func fetchUser() {
+        let context = AppDelegate.coreDataContainer.viewContext
+        
+        let request: NSFetchRequest<User> = User.fetchRequest()
+        
+        do {
+            let users = try context.fetch(request)
+            for item in users {
+                user.append(item)
+                print(users.count)
+                print("-------")
+                print(item)
+                print("-------")
+
+            }
+           
         } catch {}
     }
 }
