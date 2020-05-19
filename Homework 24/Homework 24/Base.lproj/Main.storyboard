@@ -118,9 +118,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jf-Ro-EEZ">
-                                                    <rect key="frame" x="20" y="10" width="300" height="30.5"/>
+                                                    <rect key="frame" x="20" y="10" width="380" height="30.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="EBH-0m-5Db"/>
+                                                        <constraint firstAttribute="width" constant="380" id="EBH-0m-5Db"/>
                                                         <constraint firstAttribute="height" constant="30" id="tat-Za-797"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>

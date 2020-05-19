@@ -15,7 +15,7 @@ class Lyrics_VC: UIViewController {
     
     var bandName = ""
     var songName = ""
-    
+    var temp = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +25,36 @@ class Lyrics_VC: UIViewController {
         bandName = ""
         songName = ""
     }
-    // mettalica - battery,confusion  queen - Bijou,jesus
     func getSongLyrics(artist:String, title:String) {
-        guard let url = URL(string: "https://api.lyrics.ovh/v1/\(artist)/\(title)") else {return songLyrics.text = "No Lyrics Found"}
+
+        var tempArtist = artist.replacingOccurrences(of: " ", with: "%20")
+        var tempTitle = title.replacingOccurrences(of: " ", with: "%20")
         
+        
+        // Parse Artist
+        if let i = tempArtist.firstIndex(of: "/") {
+            tempArtist.remove(at: i)
+        } else if let j = tempArtist.firstIndex(of: "'") {
+            tempArtist.remove(at: j)
+        }
+        
+        // Parse Title
+        if let i = tempTitle.firstIndex(of: "/") {
+            tempTitle.remove(at: i)
+        } else if let j = tempTitle.firstIndex(of: ",") {
+            tempTitle.remove(at: j)
+        }
+
+        print(tempArtist)
+        print(tempTitle)
+       
+        
+        guard let url = URL(string: "https://api.lyrics.ovh/v1/\(tempArtist)/\(tempTitle)") else {return songLyrics.text = "No Lyrics Found"}
+
         URLSession.shared.dataTask(with: url) { (data, res, err) in
-            
+
             guard let unwrappedData = data else {return}
-            
+
             do {
                 let decoder = JSONDecoder()
                 let templyrics = try decoder.decode(SongLyrics.self, from: unwrappedData)
@@ -41,8 +63,14 @@ class Lyrics_VC: UIViewController {
                 }
             } catch {print(error.localizedDescription)
             }
-       
+
         }.resume()
     }
+
 }
 
+extension String {
+    func removeingWhitespaces() -> String {
+        return components(separatedBy: .whitespaces).joined()
+    }
+}
