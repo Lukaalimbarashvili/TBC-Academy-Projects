@@ -89,9 +89,10 @@ extension allCountries_VC:UISearchBarDelegate{
 
         guard let searchBarText = searchBar.text else {return}
         responds.statusCode(countryName: searchBarText, completion: { (contries) in
-            
+
                 self.allCountry = contries
                             })
+     
     }
     
 }
