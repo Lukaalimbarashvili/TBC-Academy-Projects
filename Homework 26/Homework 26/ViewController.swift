@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         
         //Light
         NotificationCenter.default.addObserver(self , selector: #selector(self.updateMainView(notification:)), name: .lightNotificationKey, object: nil)
-        
         //Dark
         NotificationCenter.default.addObserver(self , selector: #selector(self.updateMainView(notification:)), name: .darkNotificationKey, object: nil)
 
