@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FF6C91DA5AD7785907BD7FC /* Pods_Homework_35.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C2BACA15498518EC4392EE /* Pods_Homework_35.framework */; };
-		A06049F6248AFE9800F0690E /* opanaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06049F5248AFE9800F0690E /* opanaController.swift */; };
+		A06049F6248AFE9800F0690E /* testVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06049F5248AFE9800F0690E /* testVC.swift */; };
 		A0641ACF248ABBEB0022BD70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0641ACE248ABBEB0022BD70 /* AppDelegate.swift */; };
 		A0641AD1248ABBEB0022BD70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0641AD0248ABBEB0022BD70 /* SceneDelegate.swift */; };
 		A0641AD3248ABBEB0022BD70 /* RickyAndMortyCharactersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0641AD2248ABBEB0022BD70 /* RickyAndMortyCharactersVC.swift */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		114784458FEE337F34D2ED89 /* Pods-Homework 35.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework 35.debug.xcconfig"; path = "Target Support Files/Pods-Homework 35/Pods-Homework 35.debug.xcconfig"; sourceTree = "<group>"; };
 		398FF4567C34DAABD2997E66 /* Pods-Homework 35.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework 35.release.xcconfig"; path = "Target Support Files/Pods-Homework 35/Pods-Homework 35.release.xcconfig"; sourceTree = "<group>"; };
-		A06049F5248AFE9800F0690E /* opanaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opanaController.swift; sourceTree = "<group>"; };
+		A06049F5248AFE9800F0690E /* testVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVC.swift; sourceTree = "<group>"; };
 		A0641ACB248ABBEB0022BD70 /* Homework 35.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework 35.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0641ACE248ABBEB0022BD70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0641AD0248ABBEB0022BD70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 				A0719194248AC032001FD2BF /* ApiResponse.swift */,
 				A0641AD2248ABBEB0022BD70 /* RickyAndMortyCharactersVC.swift */,
 				A0719196248AE3E2001FD2BF /* Character_Cell.swift */,
-				A06049F5248AFE9800F0690E /* opanaController.swift */,
+				A06049F5248AFE9800F0690E /* testVC.swift */,
 			);
 			path = "Homework 35";
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0641AD3248ABBEB0022BD70 /* RickyAndMortyCharactersVC.swift in Sources */,
-				A06049F6248AFE9800F0690E /* opanaController.swift in Sources */,
+				A06049F6248AFE9800F0690E /* testVC.swift in Sources */,
 				A0719197248AE3E2001FD2BF /* Character_Cell.swift in Sources */,
 				A0719195248AC032001FD2BF /* ApiResponse.swift in Sources */,
 				A0641ACF248ABBEB0022BD70 /* AppDelegate.swift in Sources */,

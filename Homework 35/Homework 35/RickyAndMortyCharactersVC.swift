@@ -30,13 +30,13 @@ class RickyAndMortyCharactersVC: UIViewController {
         super.viewDidLoad()
         
         
+        self.view.showAnimatedGradientSkeleton()
+        view.isSkeletonable = true
         
         response.getRickyAndMortyCharacters { (RickyAndMorty) in
             self.allChar = RickyAndMorty.characters
             
             DispatchQueue.main.async {
-                 self.view.showAnimatedGradientSkeleton()
-          
                  self.view.hideSkeleton()
             }
             

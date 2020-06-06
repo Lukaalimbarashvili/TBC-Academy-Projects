@@ -28,7 +28,7 @@ class Character_Cell: UITableViewCell {
     var tempStatus: String? {
         didSet {
             status.text = tempStatus
-                        
+        
             switch tempStatus {
             case "Dead":
                 status.textColor = .red
@@ -45,7 +45,24 @@ class Character_Cell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-    
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor.gray.cgColor,UIColor.white.cgColor]
+        gradientLayer.locations = [0,1]
+        gradientLayer.frame = imageView!.frame
+        
+        let angel = 45 * CGFloat.pi / 180
+        gradientLayer.transform = CATransform3DMakeRotation(angel, 0, 0, 1)
+        imageView?.layer.mask = gradientLayer
+        
+        let animation = CABasicAnimation(keyPath: "transform.translation.x")
+        animation.duration = 2
+        animation.fromValue = -imageView!.frame.width
+        animation.toValue   =  imageView?.frame.width
+        
+        animation.repeatCount = Float.infinity
+        gradientLayer.add(animation, forKey: "oke")
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
