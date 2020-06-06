@@ -1,0 +1,20 @@
+PODS:
+  - ShimmerSwift (2.1.1)
+  - SkeletonView (1.8.7)
+
+DEPENDENCIES:
+  - ShimmerSwift
+  - SkeletonView
+
+SPEC REPOS:
+  trunk:
+    - ShimmerSwift
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  ShimmerSwift: f7ed2daf9c246de8299dfd9e12c6ab465cba9842
+  SkeletonView: ba5370f41280b2f0a76918bb143c1294232bb4f4
+
+PODFILE CHECKSUM: 653abe38463a6b0707d8bfd02f8322ed944f2dac
+
+COCOAPODS: 1.9.3
