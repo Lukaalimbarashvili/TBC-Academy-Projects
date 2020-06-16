@@ -15,6 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E93-Z3-3bj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMp-G8-mtr">
                                 <rect key="frame" x="0.0" y="801" width="414" height="95"/>
                                 <subviews>
@@ -62,10 +66,6 @@
                                     <constraint firstItem="nrx-na-q4r" firstAttribute="top" secondItem="RMp-G8-mtr" secondAttribute="top" constant="17" id="xpN-SM-JdY"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E93-Z3-3bj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="801"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.95686274509803915" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -73,7 +73,7 @@
                             <constraint firstItem="RMp-G8-mtr" firstAttribute="trailing" secondItem="kV9-t0-QLB" secondAttribute="trailing" id="AgW-iD-gWB"/>
                             <constraint firstItem="E93-Z3-3bj" firstAttribute="leading" secondItem="kV9-t0-QLB" secondAttribute="leading" id="PFu-b3-QQ2"/>
                             <constraint firstAttribute="bottom" secondItem="RMp-G8-mtr" secondAttribute="bottom" id="S3b-on-Haj"/>
-                            <constraint firstItem="RMp-G8-mtr" firstAttribute="top" secondItem="E93-Z3-3bj" secondAttribute="bottom" id="coD-fq-HnC"/>
+                            <constraint firstAttribute="bottom" secondItem="E93-Z3-3bj" secondAttribute="bottom" id="Uwb-PU-j8T"/>
                             <constraint firstItem="E93-Z3-3bj" firstAttribute="trailing" secondItem="kV9-t0-QLB" secondAttribute="trailing" id="fnp-ON-fT1"/>
                             <constraint firstItem="RMp-G8-mtr" firstAttribute="leading" secondItem="kV9-t0-QLB" secondAttribute="leading" id="w7g-Hm-uuM"/>
                         </constraints>

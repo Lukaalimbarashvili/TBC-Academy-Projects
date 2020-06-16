@@ -15,6 +15,13 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var coffeeName: UILabel!
     
     
+    var coffe: String? {
+        didSet {
+            coffeImage.image = UIImage(named: coffe!)
+            coffeeName.text = coffe
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
