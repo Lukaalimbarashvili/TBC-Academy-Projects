@@ -51,7 +51,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ceq-UZ-k2i" firstAttribute="top" secondItem="RMp-G8-mtr" secondAttribute="top" constant="17" id="7Jg-Yv-j3z"/>
                                     <constraint firstItem="nrx-na-q4r" firstAttribute="leading" secondItem="ceq-UZ-k2i" secondAttribute="trailing" constant="110" id="8MF-fR-oN7"/>
@@ -68,7 +67,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.95686274509803915" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="E93-Z3-3bj" firstAttribute="top" secondItem="83f-YB-tEW" secondAttribute="top" id="5VL-dp-K3x"/>
                             <constraint firstItem="RMp-G8-mtr" firstAttribute="trailing" secondItem="kV9-t0-QLB" secondAttribute="trailing" id="AgW-iD-gWB"/>
@@ -83,6 +82,7 @@
                     <navigationItem key="navigationItem" id="mQx-Vo-6mc"/>
                     <connections>
                         <outlet property="mainView" destination="E93-Z3-3bj" id="snz-4x-qSF"/>
+                        <outlet property="tabBarView" destination="RMp-G8-mtr" id="Mwm-KC-xGm"/>
                         <outletCollection property="buttons" destination="ceq-UZ-k2i" collectionClass="NSMutableArray" id="NCJ-2e-Bya"/>
                         <outletCollection property="buttons" destination="nrx-na-q4r" collectionClass="NSMutableArray" id="XcQ-cU-DTz"/>
                         <outletCollection property="buttons" destination="1Tq-dY-2MR" collectionClass="NSMutableArray" id="J1X-HC-cgT"/>

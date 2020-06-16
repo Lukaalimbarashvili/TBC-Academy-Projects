@@ -12,6 +12,7 @@ class Main_VC: UIViewController {
 
     
     @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var tabBarView: UIView!
     @IBOutlet var buttons : [UIButton]!
     
     var homeViewController :UIViewController!
@@ -36,6 +37,11 @@ class Main_VC: UIViewController {
         
         buttons[selectedIndex].isSelected = true
         didPressTap(buttons[selectedIndex])
+        
+        
+        tabBarView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        tabBarView.layer.cornerRadius = 46
+        tabBarView.backgroundColor = .white
 
     }
     
