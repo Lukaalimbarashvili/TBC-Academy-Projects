@@ -13,7 +13,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var Lane: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var didSelectItemAction: ((IndexPath,String) -> Void)?
+    var magicVariable: ((IndexPath,String) -> Void)?
     
     let MainViewController = ViewController()
     var tempChamps = [String]()
@@ -54,7 +54,7 @@ extension TableViewCell: UICollectionViewDelegateFlowLayout {
 extension TableViewCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
          
-        didSelectItemAction?(indexPath,tempChamps[indexPath.row])
+        magicVariable?(indexPath,tempChamps[indexPath.row])
         
     }
 }

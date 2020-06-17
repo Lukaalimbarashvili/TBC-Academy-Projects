@@ -22,7 +22,7 @@ class DetailsVC: UIViewController {
         
         self.champImage.image = UIImage(named: self.tempChamp!)
         self.champName.text = self.tempChamp
-            }
+    }
     
 
     

@@ -44,7 +44,7 @@ extension ViewController: UITableViewDataSource {
         cell.tempChamps = allLane[indexPath.row]
         
         
-        cell.didSelectItemAction = { [weak self] indexPath, String in
+        cell.magicVariable = { [weak self] indexPath, String in
         let detailVC = self?.storyboard?.instantiateViewController(identifier: "Details") as! DetailsVC
         detailVC.tempChamp = String
         self?.navigationController?.pushViewController(detailVC, animated: true) }
