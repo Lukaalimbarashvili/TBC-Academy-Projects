@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let localize = Localize.shared
+        
+        localize.update(provider: .json)
+        
+        localize.update(fileName: "lang")
+//               localize.update(defaultLanguage: "en")
+
+        localize.update(language: "en")
+        
+        
         return true
     }
 

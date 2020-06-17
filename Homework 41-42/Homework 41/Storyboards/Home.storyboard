@@ -15,13 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="options_ic" translatesAutoresizingMaskIntoConstraints="NO" id="Enl-3g-Ird">
-                                <rect key="frame" x="20" y="120" width="24" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="HhD-86-yMg"/>
-                                    <constraint firstAttribute="height" constant="24" id="yjN-TR-Gp6"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_ic" translatesAutoresizingMaskIntoConstraints="NO" id="GEu-hs-uDg">
                                 <rect key="frame" x="367" y="120" width="31" height="24"/>
                                 <constraints>
@@ -89,30 +82,66 @@
                                     <outlet property="delegate" destination="Rp5-Cx-8jl" id="4bZ-hE-AjN"/>
                                 </connections>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label_ic" translatesAutoresizingMaskIntoConstraints="NO" id="wWm-dp-UN0">
-                                <rect key="frame" x="20" y="173" width="305" height="88"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFd-O1-xs0">
+                                <rect key="frame" x="20" y="118" width="76" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="Glv-rY-Ppt"/>
-                                    <constraint firstAttribute="width" constant="305" id="MoH-pQ-iFN"/>
+                                    <constraint firstAttribute="height" constant="21" id="CN5-RC-R3M"/>
+                                    <constraint firstAttribute="width" constant="76" id="kzY-5p-2IK"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="label.text.lang"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdc-qd-QQP">
+                                <rect key="frame" x="119" y="113" width="42" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2Ze-om-saj"/>
+                                    <constraint firstAttribute="height" constant="28" id="nKj-uW-9K5"/>
+                                </constraints>
+                                <color key="onTintColor" red="0.81176470590000005" green="0.59215686270000001" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="languageSwitch:" destination="Rp5-Cx-8jl" eventType="valueChanged" id="ucA-LN-xFe"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="it's Great Day For Coffee" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAX-7N-O7V">
+                                <rect key="frame" x="20" y="162" width="255" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="JGd-Vl-UfB"/>
+                                    <constraint firstAttribute="height" constant="90" id="X71-db-hVy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" red="0.64770119958722649" green="0.49939075637584929" blue="0.40589995564349163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="label.text.slogan"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.95686274510000002" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="kdc-qd-QQP" firstAttribute="leading" secondItem="UFd-O1-xs0" secondAttribute="trailing" constant="23" id="3LC-Ms-y6C"/>
                             <constraint firstAttribute="bottom" secondItem="hZH-oB-tKX" secondAttribute="bottom" id="A11-i9-bwr"/>
                             <constraint firstItem="hZH-oB-tKX" firstAttribute="trailing" secondItem="0U7-5g-Hvv" secondAttribute="trailing" id="BpA-jZ-HZ6"/>
                             <constraint firstItem="hZH-oB-tKX" firstAttribute="leading" secondItem="0U7-5g-Hvv" secondAttribute="leading" id="FwT-k4-wSE"/>
                             <constraint firstItem="0U7-5g-Hvv" firstAttribute="trailing" secondItem="GEu-hs-uDg" secondAttribute="trailing" constant="16" id="NIr-FP-kkx"/>
-                            <constraint firstItem="wWm-dp-UN0" firstAttribute="leading" secondItem="0U7-5g-Hvv" secondAttribute="leading" constant="20" id="SVJ-js-0GA"/>
-                            <constraint firstItem="Enl-3g-Ird" firstAttribute="leading" secondItem="0U7-5g-Hvv" secondAttribute="leading" constant="20" id="XLi-v6-ENS"/>
+                            <constraint firstItem="IAX-7N-O7V" firstAttribute="leading" secondItem="0U7-5g-Hvv" secondAttribute="leading" constant="20" id="Ypp-08-prR"/>
+                            <constraint firstItem="IAX-7N-O7V" firstAttribute="top" secondItem="kdc-qd-QQP" secondAttribute="bottom" constant="21" id="c5v-Rb-BMD"/>
                             <constraint firstItem="GEu-hs-uDg" firstAttribute="top" secondItem="0U7-5g-Hvv" secondAttribute="top" constant="32" id="dhh-Ng-y4m"/>
-                            <constraint firstItem="wWm-dp-UN0" firstAttribute="top" secondItem="Enl-3g-Ird" secondAttribute="bottom" constant="29" id="eBn-kO-xUv"/>
-                            <constraint firstItem="hZH-oB-tKX" firstAttribute="top" secondItem="wWm-dp-UN0" secondAttribute="bottom" constant="14" id="hUO-sE-zEf"/>
-                            <constraint firstItem="Enl-3g-Ird" firstAttribute="top" secondItem="0U7-5g-Hvv" secondAttribute="top" constant="32" id="wlD-uS-Fdn"/>
+                            <constraint firstItem="UFd-O1-xs0" firstAttribute="top" secondItem="0U7-5g-Hvv" secondAttribute="top" constant="30" id="eEK-Fw-aeG"/>
+                            <constraint firstItem="kdc-qd-QQP" firstAttribute="top" secondItem="0U7-5g-Hvv" secondAttribute="top" constant="25" id="fUs-Vz-NCg"/>
+                            <constraint firstItem="UFd-O1-xs0" firstAttribute="leading" secondItem="0U7-5g-Hvv" secondAttribute="leading" constant="20" id="gfG-Qv-LTh"/>
+                            <constraint firstItem="hZH-oB-tKX" firstAttribute="top" secondItem="IAX-7N-O7V" secondAttribute="bottom" constant="23" id="qXL-nT-UtL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0U7-5g-Hvv"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wgv-fp-fBx"/>
+                    <connections>
+                        <outlet property="tableView" destination="hZH-oB-tKX" id="iIh-iL-wa9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh2-YG-mYY" sceneMemberID="firstResponder"/>
             </objects>
@@ -299,9 +328,7 @@
         <image name="back" width="13" height="20"/>
         <image name="background" width="414" height="370"/>
         <image name="cups" width="156" height="104"/>
-        <image name="label_ic" width="279" height="79"/>
         <image name="macciato" width="41" height="61"/>
-        <image name="options_ic" width="23" height="18"/>
         <image name="search_ic" width="24" height="24"/>
     </resources>
 </document>

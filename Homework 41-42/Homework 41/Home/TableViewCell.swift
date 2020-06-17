@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import Localize
 
 class TableViewCell: UITableViewCell {
 
 
     @IBOutlet weak var coffeImage: UIImageView!
-    @IBOutlet weak var coffeeName: UILabel!
+    @IBOutlet weak var coffeeName: UILabel?
     
     
     var coffe: String? {
         didSet {
             coffeImage.image = UIImage(named: coffe!)
-            coffeeName.text = coffe
+        }
+    }
+    
+    var tempCoffeeName: String? {
+        didSet {
+            coffeeName?.text = tempCoffeeName!.localized
         }
     }
     
