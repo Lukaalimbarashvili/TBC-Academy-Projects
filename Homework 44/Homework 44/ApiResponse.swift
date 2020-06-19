@@ -8,22 +8,36 @@
 
 import Foundation
 
-struct BandInfo: Codable {
-    let base : String
+struct weather: Codable {
+    let timezone  : String
+    let currently : cureent?
+    let daily     : forecast?
+}
+struct cureent: Codable {
+    let icon        : String
+    let temperature : Double?
+    let humidity    : Double
+    let pressure    : Double
+}
+struct forecast: Codable {
+    let data : [dailyForecast]?
+}
+struct dailyForecast: Codable {
+    let icon           : String
+    let temperatureMin : Double?
 }
 
-
 struct APIResponse {
-    func getBands(completion: @escaping (BandInfo)->()){
+    func weatherApi(lat: String, long: String, completion: @escaping (weather)->()){
          
-         guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?lat=37.33233141&lon=-122.0312186&appid=2704cacc2c66d5007479b5ce5a031a1d") else{return}
-         
+         guard let url = URL(string: "https://api.darksky.net/forecast/ddcc4ebb2a7c9930b90d9e59bda0ba7a/\(lat),\(long)?exclude=[flags%2Cminutely&fbclid=IwAR2QX1Err5zKDeJKZJg32J4dwlRlMqLx33QCnAFmKq-u-55oUd4AokXvEzM") else{return}
+         print(url)
          URLSession.shared.dataTask(with: url){(data,res,err) in
          guard let data = data else{return}
          
          do{
              let decoder = JSONDecoder()
-             let response = try decoder.decode(BandInfo.self, from: data)
+             let response = try decoder.decode(weather.self, from: data)
              
              completion(response)
             

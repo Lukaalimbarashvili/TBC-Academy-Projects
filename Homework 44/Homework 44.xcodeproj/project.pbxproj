@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05511AD249CF77F00E884EB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05511AC249CF77F00E884EB /* TableViewCell.swift */; };
+		A05511AF249CF79300E884EB /* forecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05511AE249CF79300E884EB /* forecastVC.swift */; };
 		A08E3A07249BCF5D005FF663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E3A06249BCF5D005FF663 /* AppDelegate.swift */; };
 		A08E3A09249BCF5D005FF663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E3A08249BCF5D005FF663 /* SceneDelegate.swift */; };
 		A08E3A0B249BCF5D005FF663 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E3A0A249BCF5D005FF663 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A05511AC249CF77F00E884EB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A05511AE249CF79300E884EB /* forecastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forecastVC.swift; sourceTree = "<group>"; };
 		A08E3A03249BCF5D005FF663 /* Homework 44.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework 44.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08E3A06249BCF5D005FF663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A08E3A08249BCF5D005FF663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,12 +64,14 @@
 			children = (
 				A08E3A06249BCF5D005FF663 /* AppDelegate.swift */,
 				A08E3A08249BCF5D005FF663 /* SceneDelegate.swift */,
-				A08E3A0A249BCF5D005FF663 /* ViewController.swift */,
 				A08E3A0C249BCF5D005FF663 /* Main.storyboard */,
 				A08E3A0F249BCF5F005FF663 /* Assets.xcassets */,
 				A08E3A11249BCF5F005FF663 /* LaunchScreen.storyboard */,
 				A08E3A14249BCF5F005FF663 /* Info.plist */,
 				A09C27E4249BF88400C1BA2B /* ApiResponse.swift */,
+				A08E3A0A249BCF5D005FF663 /* ViewController.swift */,
+				A05511AE249CF79300E884EB /* forecastVC.swift */,
+				A05511AC249CF77F00E884EB /* TableViewCell.swift */,
 			);
 			path = "Homework 44";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05511AD249CF77F00E884EB /* TableViewCell.swift in Sources */,
+				A05511AF249CF79300E884EB /* forecastVC.swift in Sources */,
 				A08E3A0B249BCF5D005FF663 /* ViewController.swift in Sources */,
 				A09C27E5249BF88400C1BA2B /* ApiResponse.swift in Sources */,
 				A08E3A07249BCF5D005FF663 /* AppDelegate.swift in Sources */,
