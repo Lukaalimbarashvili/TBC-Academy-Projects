@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework_47" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="netflix" translatesAutoresizingMaskIntoConstraints="NO" id="2bw-fS-Znj">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5x-FJ-Pb1">
+                                <rect key="frame" x="0.0" y="593" width="414" height="269"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fightclub" translatesAutoresizingMaskIntoConstraints="NO" id="bYF-Z1-Tww">
+                                        <rect key="frame" x="8" y="8" width="150" height="253"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Ji9-sp-UVq"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="d1E-02-O2F" appends="YES" id="mMa-EF-k3Q"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inception" translatesAutoresizingMaskIntoConstraints="NO" id="RmA-EG-mLf">
+                                        <rect key="frame" x="188" y="8" width="150" height="253"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="d4g-9f-gJT"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="aTm-5Z-6Z1" appends="YES" id="Uj1-Hk-m42"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ironman" translatesAutoresizingMaskIntoConstraints="NO" id="DJ0-gL-qcr">
+                                        <rect key="frame" x="368" y="8" width="150" height="253"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="VWR-cM-tAw"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="eDY-gb-LOt" appends="YES" id="G8f-Db-9LY"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bYF-Z1-Tww" secondAttribute="bottom" constant="8" id="2xD-A7-3vR"/>
+                                    <constraint firstItem="RmA-EG-mLf" firstAttribute="leading" secondItem="bYF-Z1-Tww" secondAttribute="trailing" constant="30" id="4Ob-e1-Eog"/>
+                                    <constraint firstAttribute="bottom" secondItem="DJ0-gL-qcr" secondAttribute="bottom" constant="8" id="6FP-CK-RRk"/>
+                                    <constraint firstAttribute="bottom" secondItem="RmA-EG-mLf" secondAttribute="bottom" constant="8" id="7ve-HI-9Wd"/>
+                                    <constraint firstItem="DJ0-gL-qcr" firstAttribute="top" secondItem="yq4-Qd-HyB" secondAttribute="top" constant="8" id="WOJ-Ek-mt9"/>
+                                    <constraint firstItem="RmA-EG-mLf" firstAttribute="top" secondItem="yq4-Qd-HyB" secondAttribute="top" constant="8" id="XvX-Gw-gEI"/>
+                                    <constraint firstItem="bYF-Z1-Tww" firstAttribute="leading" secondItem="A5x-FJ-Pb1" secondAttribute="leading" constant="8" id="acO-hq-DEQ"/>
+                                    <constraint firstItem="bYF-Z1-Tww" firstAttribute="centerY" secondItem="A5x-FJ-Pb1" secondAttribute="centerY" id="cwZ-qq-da1"/>
+                                    <constraint firstItem="DJ0-gL-qcr" firstAttribute="leading" secondItem="RmA-EG-mLf" secondAttribute="trailing" constant="30" id="f2n-IM-V0r"/>
+                                    <constraint firstItem="bYF-Z1-Tww" firstAttribute="top" secondItem="A5x-FJ-Pb1" secondAttribute="top" constant="8" id="hd7-wV-8ZD"/>
+                                    <constraint firstAttribute="trailing" secondItem="DJ0-gL-qcr" secondAttribute="trailing" constant="8" id="trF-yB-JvS"/>
+                                    <constraint firstItem="DJ0-gL-qcr" firstAttribute="leading" secondItem="RmA-EG-mLf" secondAttribute="trailing" constant="30" id="zT0-XL-0bh"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="u8m-Yn-6RD"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="yq4-Qd-HyB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2bw-fS-Znj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="8mf-Yq-21s"/>
+                            <constraint firstItem="A5x-FJ-Pb1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="EBc-HX-3EQ"/>
+                            <constraint firstItem="A5x-FJ-Pb1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EGe-dl-0YL"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2bw-fS-Znj" secondAttribute="bottom" id="EyK-PP-LA8"/>
+                            <constraint firstItem="2bw-fS-Znj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aHq-8t-hki"/>
+                            <constraint firstItem="A5x-FJ-Pb1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uI1-EA-XUS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2bw-fS-Znj" secondAttribute="trailing" id="wrE-4F-pKK"/>
+                            <constraint firstItem="A5x-FJ-Pb1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="x1V-3H-eUv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstImageView" destination="bYF-Z1-Tww" id="Ds4-OV-ltm"/>
+                        <outlet property="secondImageView" destination="RmA-EG-mLf" id="smf-xJ-g5k"/>
+                        <outlet property="thirdImageView" destination="DJ0-gL-qcr" id="ZC5-cK-n00"/>
+                        <segue destination="bJX-xu-cjB" kind="show" identifier="animatedSegue" id="3vP-M8-ZuF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="d1E-02-O2F" userLabel="FirstImage">
+                    <connections>
+                        <action selector="firstImageTapped:" destination="BYZ-38-t0r" id="Fxl-ys-fLe"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="aTm-5Z-6Z1" userLabel="onSecondImage">
+                    <connections>
+                        <action selector="secondImageTapped:" destination="BYZ-38-t0r" id="lSu-Ck-P4l"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="eDY-gb-LOt" userLabel="onThirdImage">
+                    <connections>
+                        <action selector="thirdImageTapped:" destination="BYZ-38-t0r" id="UUZ-q6-Sb7"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </scene>
+        <!--Animated View Controller-->
+        <scene sceneID="kI6-ub-WdK">
+            <objects>
+                <viewController id="bJX-xu-cjB" customClass="AnimatedViewController" customModule="Homework_47" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cy6-e0-O0L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UOd-U5-pEP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UOd-U5-pEP" secondAttribute="bottom" id="4Ry-Rw-11t"/>
+                            <constraint firstItem="UOd-U5-pEP" firstAttribute="top" secondItem="cy6-e0-O0L" secondAttribute="top" id="Kjl-2K-gZN"/>
+                            <constraint firstItem="UOd-U5-pEP" firstAttribute="leading" secondItem="uYn-QP-4YA" secondAttribute="leading" id="by2-js-Ggj"/>
+                            <constraint firstItem="UOd-U5-pEP" firstAttribute="top" secondItem="uYn-QP-4YA" secondAttribute="top" id="dAg-JH-ujb"/>
+                            <constraint firstItem="uYn-QP-4YA" firstAttribute="trailing" secondItem="UOd-U5-pEP" secondAttribute="trailing" id="ihv-Dq-eNv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uYn-QP-4YA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Fu-zD-VPQ"/>
+                    <connections>
+                        <outlet property="mainImageView" destination="UOd-U5-pEP" id="ico-bX-QUK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNU-iw-zsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969.56521739130437" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fightclub" width="1066" height="1600"/>
+        <image name="inception" width="268" height="402"/>
+        <image name="ironman" width="811" height="1200"/>
+        <image name="netflix" width="1028" height="578"/>
+    </resources>
+</document>
