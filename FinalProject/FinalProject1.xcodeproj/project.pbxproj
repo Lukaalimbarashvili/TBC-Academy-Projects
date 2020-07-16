@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		756AE59F8EAAEB63423E09E6 /* Pods_FinalProject1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09098858C31C21EB2E35D94 /* Pods_FinalProject1.framework */; };
+		A0110AFC24B61FC3000834C5 /* WordGuess_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0110AFB24B61FC3000834C5 /* WordGuess_VC.swift */; };
+		A0110AFE24B6200A000834C5 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0110AFD24B6200A000834C5 /* ApiResponse.swift */; };
+		A0110B0024B62015000834C5 /* JSON in Resources */ = {isa = PBXBuildFile; fileRef = A0110AFF24B62015000834C5 /* JSON */; };
+		A0110B0224BB4978000834C5 /* FlipCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0110B0124BB4978000834C5 /* FlipCard.storyboard */; };
+		A0110B0424BB49F3000834C5 /* Drawing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0110B0324BB49F3000834C5 /* Drawing.storyboard */; };
+		A03AC8C624A8A76B00DA8324 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03AC8C524A8A76B00DA8324 /* Extensions.swift */; };
+		A04E988324A761ED00A6BEB2 /* colors_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E988224A761ED00A6BEB2 /* colors_Cell.swift */; };
+		A04E98CB24A8326400A6BEB2 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E98CA24A8326400A6BEB2 /* UserDefaults.swift */; };
+		A04E98D024A8348700A6BEB2 /* myDrawingsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E98CF24A8348700A6BEB2 /* myDrawingsTableCell.swift */; };
+		A04E98D224A838CB00A6BEB2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E98D124A838CB00A6BEB2 /* FileManager.swift */; };
+		A04E98D624A8395800A6BEB2 /* MyArts_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E98D524A8395800A6BEB2 /* MyArts_VC.swift */; };
+		A08146E724B341A10066A2F8 /* allGame_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08146E624B341A10066A2F8 /* allGame_Cell.swift */; };
+		A08146EA24B34C540066A2F8 /* Baccara_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08146E924B34C540066A2F8 /* Baccara_VC.swift */; };
+		A08146EC24B353120066A2F8 /* BaccaraHistory_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08146EB24B353120066A2F8 /* BaccaraHistory_VC.swift */; };
+		A08146EE24B353800066A2F8 /* BaccaraHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08146ED24B353800066A2F8 /* BaccaraHistoryCell.swift */; };
+		A08146F324B4BCEF0066A2F8 /* onBoarding_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08146F224B4BCEF0066A2F8 /* onBoarding_VC.swift */; };
+		A08146F524B4D29F0066A2F8 /* pageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08146F424B4D29F0066A2F8 /* pageControl.swift */; };
+		A08A596524A2892800BB5778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A596424A2892800BB5778 /* AppDelegate.swift */; };
+		A08A596724A2892800BB5778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A596624A2892800BB5778 /* SceneDelegate.swift */; };
+		A08A596924A2892800BB5778 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A596824A2892800BB5778 /* ViewController.swift */; };
+		A08A596C24A2892800BB5778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08A596A24A2892800BB5778 /* Main.storyboard */; };
+		A08A596F24A2892800BB5778 /* FinalProject1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A08A596D24A2892800BB5778 /* FinalProject1.xcdatamodeld */; };
+		A08A597124A2892800BB5778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08A597024A2892800BB5778 /* Assets.xcassets */; };
+		A08A597424A2892800BB5778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08A597224A2892800BB5778 /* LaunchScreen.storyboard */; };
+		A08A597E24A28A5700BB5778 /* IDEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A597D24A28A5700BB5778 /* IDEnums.swift */; };
+		A092BF6424BB4AD300AF8081 /* Baccara.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A092BF6324BB4AD300AF8081 /* Baccara.storyboard */; };
+		A092BF6724BB4B1D00AF8081 /* WordGuess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A092BF6524BB4B1D00AF8081 /* WordGuess.storyboard */; };
+		A092BF6A24BB4D9D00AF8081 /* Map_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092BF6924BB4D9D00AF8081 /* Map_VC.swift */; };
+		A092BF6D24BB4E1E00AF8081 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A092BF6B24BB4E1E00AF8081 /* Map.storyboard */; };
+		A0CCC9D624A324F400FAC1D1 /* GameInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCC9D524A324F400FAC1D1 /* GameInfos.swift */; };
+		A0CCC9D924A32FC800FAC1D1 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCC9D824A32FC800FAC1D1 /* CardModel.swift */; };
+		A0CCC9DB24A32FE300FAC1D1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCC9DA24A32FE300FAC1D1 /* Card.swift */; };
+		A0CCC9DD24A3300C00FAC1D1 /* SoundsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCC9DC24A3300C00FAC1D1 /* SoundsManager.swift */; };
+		A0CCC9DF24A3470000FAC1D1 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCC9DE24A3470000FAC1D1 /* CardCollectionViewCell.swift */; };
+		A0CCC9E124A347CF00FAC1D1 /* CardFlip VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCC9E024A347CF00FAC1D1 /* CardFlip VC.swift */; };
+		A0CCC9E624A351B100FAC1D1 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = A0CCC9E324A351B100FAC1D1 /* win.wav */; };
+		A0CCC9E724A351B100FAC1D1 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = A0CCC9E424A351B100FAC1D1 /* lose.wav */; };
+		A0CCC9E824A351B100FAC1D1 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = A0CCC9E524A351B100FAC1D1 /* click.wav */; };
+		A0CCC9EC24A3619400FAC1D1 /* Drawing_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCC9EB24A3619400FAC1D1 /* Drawing_VC.swift */; };
+		A0CCC9EE24A362BD00FAC1D1 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCC9ED24A362BD00FAC1D1 /* Canvas.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D2DD32E975CA19C533962EB /* Pods-FinalProject1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject1.release.xcconfig"; path = "Target Support Files/Pods-FinalProject1/Pods-FinalProject1.release.xcconfig"; sourceTree = "<group>"; };
+		A0110AFB24B61FC3000834C5 /* WordGuess_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGuess_VC.swift; sourceTree = "<group>"; };
+		A0110AFD24B6200A000834C5 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		A0110AFF24B62015000834C5 /* JSON */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSON; sourceTree = "<group>"; };
+		A0110B0124BB4978000834C5 /* FlipCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FlipCard.storyboard; sourceTree = "<group>"; };
+		A0110B0324BB49F3000834C5 /* Drawing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Drawing.storyboard; path = FinalProject1/StoryBoards/Drawing.storyboard; sourceTree = SOURCE_ROOT; };
+		A03AC8C524A8A76B00DA8324 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A04E988224A761ED00A6BEB2 /* colors_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors_Cell.swift; sourceTree = "<group>"; };
+		A04E98CA24A8326400A6BEB2 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		A04E98CF24A8348700A6BEB2 /* myDrawingsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myDrawingsTableCell.swift; sourceTree = "<group>"; };
+		A04E98D124A838CB00A6BEB2 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		A04E98D524A8395800A6BEB2 /* MyArts_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArts_VC.swift; sourceTree = "<group>"; };
+		A08146E624B341A10066A2F8 /* allGame_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allGame_Cell.swift; sourceTree = "<group>"; };
+		A08146E924B34C540066A2F8 /* Baccara_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baccara_VC.swift; sourceTree = "<group>"; };
+		A08146EB24B353120066A2F8 /* BaccaraHistory_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaccaraHistory_VC.swift; sourceTree = "<group>"; };
+		A08146ED24B353800066A2F8 /* BaccaraHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaccaraHistoryCell.swift; sourceTree = "<group>"; };
+		A08146F224B4BCEF0066A2F8 /* onBoarding_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoarding_VC.swift; sourceTree = "<group>"; };
+		A08146F424B4D29F0066A2F8 /* pageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageControl.swift; sourceTree = "<group>"; };
+		A08A596124A2892800BB5778 /* FinalProject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08A596424A2892800BB5778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A08A596624A2892800BB5778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A08A596824A2892800BB5778 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A08A596B24A2892800BB5778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A08A596E24A2892800BB5778 /* FinalProject1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinalProject1.xcdatamodel; sourceTree = "<group>"; };
+		A08A597024A2892800BB5778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A08A597324A2892800BB5778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A08A597524A2892800BB5778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08A597D24A28A5700BB5778 /* IDEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDEnums.swift; sourceTree = "<group>"; };
+		A092BF6324BB4AD300AF8081 /* Baccara.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Baccara.storyboard; sourceTree = SOURCE_ROOT; };
+		A092BF6624BB4B1D00AF8081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WordGuess.storyboard; sourceTree = "<group>"; };
+		A092BF6924BB4D9D00AF8081 /* Map_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_VC.swift; sourceTree = "<group>"; };
+		A092BF6C24BB4E1E00AF8081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Map.storyboard; sourceTree = "<group>"; };
+		A0CCC9D524A324F400FAC1D1 /* GameInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfos.swift; sourceTree = "<group>"; };
+		A0CCC9D824A32FC800FAC1D1 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		A0CCC9DA24A32FE300FAC1D1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A0CCC9DC24A3300C00FAC1D1 /* SoundsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsManager.swift; sourceTree = "<group>"; };
+		A0CCC9DE24A3470000FAC1D1 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0CCC9E024A347CF00FAC1D1 /* CardFlip VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardFlip VC.swift"; sourceTree = "<group>"; };
+		A0CCC9E324A351B100FAC1D1 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		A0CCC9E424A351B100FAC1D1 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		A0CCC9E524A351B100FAC1D1 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		A0CCC9EB24A3619400FAC1D1 /* Drawing_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing_VC.swift; sourceTree = "<group>"; };
+		A0CCC9ED24A362BD00FAC1D1 /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		AD0090A3CC73168C10BA2F68 /* Pods-FinalProject1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject1.debug.xcconfig"; path = "Target Support Files/Pods-FinalProject1/Pods-FinalProject1.debug.xcconfig"; sourceTree = "<group>"; };
+		B09098858C31C21EB2E35D94 /* Pods_FinalProject1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProject1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A08A595E24A2892800BB5778 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756AE59F8EAAEB63423E09E6 /* Pods_FinalProject1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86E58A6DDD29AAD07F883AB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B09098858C31C21EB2E35D94 /* Pods_FinalProject1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0110AFA24B61FA5000834C5 /* Guess Word */ = {
+			isa = PBXGroup;
+			children = (
+				A0110AFB24B61FC3000834C5 /* WordGuess_VC.swift */,
+				A0110AFD24B6200A000834C5 /* ApiResponse.swift */,
+				A0110AFF24B62015000834C5 /* JSON */,
+			);
+			path = "Guess Word";
+			sourceTree = "<group>";
+		};
+		A0110B0524BB4A81000834C5 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A08A596A24A2892800BB5778 /* Main.storyboard */,
+				A0110B0124BB4978000834C5 /* FlipCard.storyboard */,
+				A0110B0324BB49F3000834C5 /* Drawing.storyboard */,
+				A092BF6324BB4AD300AF8081 /* Baccara.storyboard */,
+				A092BF6524BB4B1D00AF8081 /* WordGuess.storyboard */,
+				A092BF6B24BB4E1E00AF8081 /* Map.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A03AC8C424A8A74F00DA8324 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A03AC8C524A8A76B00DA8324 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A04E98CE24A8345800A6BEB2 /* MyDrawings */ = {
+			isa = PBXGroup;
+			children = (
+				A04E98D524A8395800A6BEB2 /* MyArts_VC.swift */,
+				A04E98CF24A8348700A6BEB2 /* myDrawingsTableCell.swift */,
+			);
+			path = MyDrawings;
+			sourceTree = "<group>";
+		};
+		A07282DF24BD9E430043A74B /* IdEnums */ = {
+			isa = PBXGroup;
+			children = (
+				A08A597D24A28A5700BB5778 /* IDEnums.swift */,
+			);
+			path = IdEnums;
+			sourceTree = "<group>";
+		};
+		A08146E824B34C390066A2F8 /* Baccara */ = {
+			isa = PBXGroup;
+			children = (
+				A08146E924B34C540066A2F8 /* Baccara_VC.swift */,
+				A08146EB24B353120066A2F8 /* BaccaraHistory_VC.swift */,
+				A08146ED24B353800066A2F8 /* BaccaraHistoryCell.swift */,
+			);
+			path = Baccara;
+			sourceTree = "<group>";
+		};
+		A08146F124B4BCC90066A2F8 /* onBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				A08146F224B4BCEF0066A2F8 /* onBoarding_VC.swift */,
+				A08146F424B4D29F0066A2F8 /* pageControl.swift */,
+			);
+			path = onBoarding;
+			sourceTree = "<group>";
+		};
+		A08146F624B4DE810066A2F8 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				A04E98CA24A8326400A6BEB2 /* UserDefaults.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		A08A595824A2892800BB5778 = {
+			isa = PBXGroup;
+			children = (
+				A08A596324A2892800BB5778 /* FinalProject1 */,
+				A08A596224A2892800BB5778 /* Products */,
+				C9767123EB3E88EB432830F8 /* Pods */,
+				86E58A6DDD29AAD07F883AB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A08A596224A2892800BB5778 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A08A596124A2892800BB5778 /* FinalProject1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A08A596324A2892800BB5778 /* FinalProject1 */ = {
+			isa = PBXGroup;
+			children = (
+				A08A596424A2892800BB5778 /* AppDelegate.swift */,
+				A08A596624A2892800BB5778 /* SceneDelegate.swift */,
+				A08A597024A2892800BB5778 /* Assets.xcassets */,
+				A08A597224A2892800BB5778 /* LaunchScreen.storyboard */,
+				A08A597524A2892800BB5778 /* Info.plist */,
+				A08A596D24A2892800BB5778 /* FinalProject1.xcdatamodeld */,
+				A0110B0524BB4A81000834C5 /* StoryBoards */,
+				A08146F624B4DE810066A2F8 /* UserDefaults */,
+				A08146F124B4BCC90066A2F8 /* onBoarding */,
+				A0CCC9E924A356F800FAC1D1 /* GameStation */,
+				A0CCC9EA24A3616D00FAC1D1 /* Drawing */,
+				A0CCC9D724A32FB500FAC1D1 /* FlipCard */,
+				A08146E824B34C390066A2F8 /* Baccara */,
+				A0110AFA24B61FA5000834C5 /* Guess Word */,
+				A092BF6824BB4D7B00AF8081 /* Map */,
+				A07282DF24BD9E430043A74B /* IdEnums */,
+				A03AC8C424A8A74F00DA8324 /* Extensions */,
+			);
+			path = FinalProject1;
+			sourceTree = "<group>";
+		};
+		A092BF6824BB4D7B00AF8081 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A092BF6924BB4D9D00AF8081 /* Map_VC.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A0CCC9D724A32FB500FAC1D1 /* FlipCard */ = {
+			isa = PBXGroup;
+			children = (
+				A0CCC9E224A3514800FAC1D1 /* Sounds */,
+				A0CCC9E024A347CF00FAC1D1 /* CardFlip VC.swift */,
+				A0CCC9DE24A3470000FAC1D1 /* CardCollectionViewCell.swift */,
+				A0CCC9D824A32FC800FAC1D1 /* CardModel.swift */,
+				A0CCC9DA24A32FE300FAC1D1 /* Card.swift */,
+				A0CCC9DC24A3300C00FAC1D1 /* SoundsManager.swift */,
+			);
+			path = FlipCard;
+			sourceTree = "<group>";
+		};
+		A0CCC9E224A3514800FAC1D1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A0CCC9E524A351B100FAC1D1 /* click.wav */,
+				A0CCC9E424A351B100FAC1D1 /* lose.wav */,
+				A0CCC9E324A351B100FAC1D1 /* win.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		A0CCC9E924A356F800FAC1D1 /* GameStation */ = {
+			isa = PBXGroup;
+			children = (
+				A08A596824A2892800BB5778 /* ViewController.swift */,
+				A0CCC9D524A324F400FAC1D1 /* GameInfos.swift */,
+				A08146E624B341A10066A2F8 /* allGame_Cell.swift */,
+			);
+			path = GameStation;
+			sourceTree = "<group>";
+		};
+		A0CCC9EA24A3616D00FAC1D1 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				A0CCC9EB24A3619400FAC1D1 /* Drawing_VC.swift */,
+				A04E988224A761ED00A6BEB2 /* colors_Cell.swift */,
+				A0CCC9ED24A362BD00FAC1D1 /* Canvas.swift */,
+				A04E98D124A838CB00A6BEB2 /* FileManager.swift */,
+				A04E98CE24A8345800A6BEB2 /* MyDrawings */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		C9767123EB3E88EB432830F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD0090A3CC73168C10BA2F68 /* Pods-FinalProject1.debug.xcconfig */,
+				9D2DD32E975CA19C533962EB /* Pods-FinalProject1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A08A596024A2892800BB5778 /* FinalProject1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08A597824A2892900BB5778 /* Build configuration list for PBXNativeTarget "FinalProject1" */;
+			buildPhases = (
+				ADD2ECF631A8C2D2718A0E23 /* [CP] Check Pods Manifest.lock */,
+				A08A595D24A2892800BB5778 /* Sources */,
+				A08A595E24A2892800BB5778 /* Frameworks */,
+				A08A595F24A2892800BB5778 /* Resources */,
+				9CB7F3670358282FE5F19AF9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinalProject1;
+			productName = FinalProject1;
+			productReference = A08A596124A2892800BB5778 /* FinalProject1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A08A595924A2892800BB5778 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = lucas;
+				TargetAttributes = {
+					A08A596024A2892800BB5778 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = A08A595C24A2892800BB5778 /* Build configuration list for PBXProject "FinalProject1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A08A595824A2892800BB5778;
+			productRefGroup = A08A596224A2892800BB5778 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A08A596024A2892800BB5778 /* FinalProject1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A08A595F24A2892800BB5778 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0110B0424BB49F3000834C5 /* Drawing.storyboard in Resources */,
+				A0CCC9E724A351B100FAC1D1 /* lose.wav in Resources */,
+				A08A597424A2892800BB5778 /* LaunchScreen.storyboard in Resources */,
+				A0CCC9E624A351B100FAC1D1 /* win.wav in Resources */,
+				A092BF6424BB4AD300AF8081 /* Baccara.storyboard in Resources */,
+				A0CCC9E824A351B100FAC1D1 /* click.wav in Resources */,
+				A08A597124A2892800BB5778 /* Assets.xcassets in Resources */,
+				A08A596C24A2892800BB5778 /* Main.storyboard in Resources */,
+				A092BF6724BB4B1D00AF8081 /* WordGuess.storyboard in Resources */,
+				A0110B0024B62015000834C5 /* JSON in Resources */,
+				A0110B0224BB4978000834C5 /* FlipCard.storyboard in Resources */,
+				A092BF6D24BB4E1E00AF8081 /* Map.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CB7F3670358282FE5F19AF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinalProject1/Pods-FinalProject1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinalProject1/Pods-FinalProject1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinalProject1/Pods-FinalProject1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADD2ECF631A8C2D2718A0E23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinalProject1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A08A595D24A2892800BB5778 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08146F524B4D29F0066A2F8 /* pageControl.swift in Sources */,
+				A0CCC9DB24A32FE300FAC1D1 /* Card.swift in Sources */,
+				A0CCC9EC24A3619400FAC1D1 /* Drawing_VC.swift in Sources */,
+				A08A596F24A2892800BB5778 /* FinalProject1.xcdatamodeld in Sources */,
+				A0CCC9DF24A3470000FAC1D1 /* CardCollectionViewCell.swift in Sources */,
+				A08A596924A2892800BB5778 /* ViewController.swift in Sources */,
+				A0110AFE24B6200A000834C5 /* ApiResponse.swift in Sources */,
+				A08146EC24B353120066A2F8 /* BaccaraHistory_VC.swift in Sources */,
+				A0CCC9D624A324F400FAC1D1 /* GameInfos.swift in Sources */,
+				A0CCC9E124A347CF00FAC1D1 /* CardFlip VC.swift in Sources */,
+				A08146EA24B34C540066A2F8 /* Baccara_VC.swift in Sources */,
+				A04E98D224A838CB00A6BEB2 /* FileManager.swift in Sources */,
+				A08A597E24A28A5700BB5778 /* IDEnums.swift in Sources */,
+				A04E988324A761ED00A6BEB2 /* colors_Cell.swift in Sources */,
+				A08146F324B4BCEF0066A2F8 /* onBoarding_VC.swift in Sources */,
+				A0110AFC24B61FC3000834C5 /* WordGuess_VC.swift in Sources */,
+				A0CCC9EE24A362BD00FAC1D1 /* Canvas.swift in Sources */,
+				A04E98CB24A8326400A6BEB2 /* UserDefaults.swift in Sources */,
+				A08146EE24B353800066A2F8 /* BaccaraHistoryCell.swift in Sources */,
+				A04E98D624A8395800A6BEB2 /* MyArts_VC.swift in Sources */,
+				A0CCC9D924A32FC800FAC1D1 /* CardModel.swift in Sources */,
+				A092BF6A24BB4D9D00AF8081 /* Map_VC.swift in Sources */,
+				A03AC8C624A8A76B00DA8324 /* Extensions.swift in Sources */,
+				A0CCC9DD24A3300C00FAC1D1 /* SoundsManager.swift in Sources */,
+				A08A596524A2892800BB5778 /* AppDelegate.swift in Sources */,
+				A08146E724B341A10066A2F8 /* allGame_Cell.swift in Sources */,
+				A08A596724A2892800BB5778 /* SceneDelegate.swift in Sources */,
+				A04E98D024A8348700A6BEB2 /* myDrawingsTableCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A08A596A24A2892800BB5778 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A08A596B24A2892800BB5778 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A08A597224A2892800BB5778 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A08A597324A2892800BB5778 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A092BF6524BB4B1D00AF8081 /* WordGuess.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A092BF6624BB4B1D00AF8081 /* Base */,
+			);
+			name = WordGuess.storyboard;
+			sourceTree = "<group>";
+		};
+		A092BF6B24BB4E1E00AF8081 /* Map.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A092BF6C24BB4E1E00AF8081 /* Base */,
+			);
+			name = Map.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A08A597624A2892900BB5778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A08A597724A2892900BB5778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A08A597924A2892900BB5778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0090A3CC73168C10BA2F68 /* Pods-FinalProject1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FinalProject1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ge.lucasTheCoder.FinalProject1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A08A597A24A2892900BB5778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2DD32E975CA19C533962EB /* Pods-FinalProject1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FinalProject1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ge.lucasTheCoder.FinalProject1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A08A595C24A2892800BB5778 /* Build configuration list for PBXProject "FinalProject1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08A597624A2892900BB5778 /* Debug */,
+				A08A597724A2892900BB5778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A08A597824A2892900BB5778 /* Build configuration list for PBXNativeTarget "FinalProject1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08A597924A2892900BB5778 /* Debug */,
+				A08A597A24A2892900BB5778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A08A596D24A2892800BB5778 /* FinalProject1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A08A596E24A2892800BB5778 /* FinalProject1.xcdatamodel */,
+			);
+			currentVersion = A08A596E24A2892800BB5778 /* FinalProject1.xcdatamodel */;
+			path = FinalProject1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A08A595924A2892800BB5778 /* Project object */;
+}

@@ -14,7 +14,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var name: UILabel!
     
-    var isLoaded = false
+//    var isLoaded = false
     
     private lazy var shimmerContainer = ShimmerContainer(parentView: self)
     

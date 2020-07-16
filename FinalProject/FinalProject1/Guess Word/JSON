@@ -1,0 +1,33 @@
+
+{
+ "words": [
+         {
+            "word": "animal",
+            "image1": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-puppy-lying-down-on-grass-royalty-free-image-1587052215.jpg",
+            "image2": "https://c402277.ssl.cf1.rackcdn.com/photos/14206/images/hero_full/WW187785.jpg",
+            "image3": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg",
+            "image4": "https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg"
+        },
+        {
+            "word": "think",
+            "image1": "https://www.danpontefract.com/content/wp-content/uploads/2018/10/critical-thinking-1200x927.jpg",
+            "image2": "https://thumbs.dreamstime.com/b/%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-rgb-167368863.jpg",
+            "image3": "https://cdn2.vectorstock.com/i/1000x1000/99/91/critical-thinking-flat-vector-22829991.jpg",
+            "image4": "https://www.pragcap.com/wp-content/uploads/2019/01/E110989F-E89F-4FBF-8942-35E6024B3A47.jpeg"
+        },
+        {
+            "word": "cold",
+            "image1": "https://www.partstown.com/about-us/wp-content/uploads/2012/07/Troubleshooting-a-Scotsman-Ice-Machine-Melted-Ice-Cubes.jpg",
+            "image2": "https://www.sweetestmenu.com/wp-content/uploads/2019/07/rockyroad8a.jpg",
+            "image3": "https://movies-b26f.kxcdn.com/wp-content/uploads/2019/11/nicholson-frozen-the-shining_0-770x470.jpg",
+            "image4": "https://r-cf.bstatic.com/images/hotel/max1024x768/221/221025661.jpg"
+        },
+        {
+            "word": "bow",
+            "image1": "https://static.turbosquid.com/Preview/2019/01/02__04_46_49/AntiqueWoodenBowwithArrows3dsmodel000.jpgBAC7A1F8-A02F-484C-9722-BD0292B631F1Large.jpg",
+            "image2": "https://www.mytuxedo.com.au/media/catalog/product/cache/7/thumbnail/9df78eab33525d08d6e5fb8d27136e95/b/t/btpom00yl4-main_1.jpg",
+            "image3": "https://previews.123rf.com/images/westend61/westend611712/westend61171201837/90889547-boy-shooting-with-bow-and-arrow.jpg",
+            "image4": "https://thefirstripple.files.wordpress.com/2014/04/polite-bow.jpg"
+        }
+    ]
+}

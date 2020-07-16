@@ -1,0 +1,28 @@
+PODS:
+  - PureLayout (3.0.2)
+  - Shimmer (1.0.2)
+  - ShimmerBlocks (0.1.1):
+    - PureLayout (~> 3.0.2)
+    - Shimmer (~> 1.0.2)
+  - UPCarouselFlowLayout (1.1.2)
+
+DEPENDENCIES:
+  - ShimmerBlocks
+  - UPCarouselFlowLayout
+
+SPEC REPOS:
+  trunk:
+    - PureLayout
+    - Shimmer
+    - ShimmerBlocks
+    - UPCarouselFlowLayout
+
+SPEC CHECKSUMS:
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  ShimmerBlocks: fe8fba0be754fae85be8cab8e934050112e1f601
+  UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
+
+PODFILE CHECKSUM: 0aafbd1987daf112c3985e1f861fcab7f82b4a38
+
+COCOAPODS: 1.9.3
